@@ -1,5 +1,7 @@
 # This is the README of Cosmin
 
+Create a text file named what-isthis.txt and answer to the following quesitons:
+
 What is this?
 
 1. []
