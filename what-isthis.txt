@@ -1,24 +1,25 @@
-What is this?
+### What is this?
 
-1.[] brackets in an array
-2.{} brackets in an object
-3.[a: a] it should be {a:"a"} then it is making a object have a property
-4.{a:a}  it should be {a:"a"} then it is making a object have a property
-5.[1, 3, 'Joseph', Avram] it should be [1, 3, 'Joseph', 'Avram'] it is a mixed array
-6.[1, 3, 'Joseph', 'Avram'] It is a mixed array
-7.{name: Joseph} It should be {name: "Joseph"} it is a string.
-8.{name: "Joseph"} it is a string and is giving the object property a value.
-9.{1, 2, 3, 4} This is a array but it should be [1, 2, 3, 4]
-What is the type of this?
+1. [] brackets is an array.
+2. {} brackets is an object.
+3. [a: a] this is nothing. To make it an object with a property a and a value "a" we write {a:"a"}.
+4. {a:a}  this is nothing. To make it an object with a property a and a value "a" we write {a:"a"}.
+5. [1, 3, 'Joseph', Avram] this is an array but there is an exception (error). The correct format is: [1, 3, 'Joseph', 'Avram'].
+6. [1, 3, 'Joseph', 'Avram'] It is a mixed array
+7. {name: Joseph} this might be an object except the error which when corrected will give us: {name: "Joseph"}.
+8. {name: "Joseph"} this is an object with the property named "name" and the value of the property "name" is "Joseph".
+9. {1, 2, 3, 4} This is nothing but if we want to make it an array, we write: [1, 2, 3, 4]
 
-"Joseph" string
-122   it should have quotes around it integar
-1.23 it should have quotes around it float
-Joseph it should be "joseph" it is a string
-null it should have quotes around it null
-true it should have quotes around it boolean
-false it should have quotes around it boolean
-undefined  it should have quotes around itundefined
-"1.23" float
-'1.23' float
-"This is Avram and Joseph" string
+### What is the type of this?
+
+1. "Joseph" this is a string.
+2. 122 this is an integer.
+3. 1.23 this is a float number.
+4. Joseph this is nothing. To make it a string we write: "Joseph".
+5. null this is a boolean of value null.
+6. true this is a boolean of value true.
+7. false this is a boolean of value false.
+8. undefined  this is the undefined type.
+9. "1.23" this is a string it ia a float as a string.
+10. '1.23' this is a string it ia a float as a string.
+11. "This is Avram and Joseph" this is string.
