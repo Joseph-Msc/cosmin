@@ -1,0 +1,26 @@
+1. Create an HTML table containing 4 columns and 6 rows. Make sure the table heades are split in three columns with the midle column spaning two columns.
+2. Create an HTML file adding the HTML, HEAD with TITLE and Bootstrap CSS style import, BODY.
+3. Add to the BODY of the HTML file the table created at the begining.
+4. Make sure to add to the table the following two classes: table and table-bordered.
+5. Make sure this table sits inside a container of type div or p (you hhave to choose the correct continer type).
+6. Add a new continer above the container containing the table and inside it create a form using: FORM, LABEL, INPUT, TEXTAREA, BUTTON. The for should contain:
+   - First Name.
+   - Last Name.
+   - Email Address.
+   - You are? (available options: none, male, female).
+   - Comments.
+   - A button named: SAVE.
+   Don't forget to add the respective labels.
+7. Create a JSON file and add inside it the following JSON object:
+   - name is Joseph.
+   - age is 12.
+   - sex is male.
+   - email address is null.
+   - comments is a random short paragraph.
+   Please read the least above as a pare of key/values representing the object.
+8. Now, inside the HTML file add a new table with the following columns and rows (you have to guess the columns and rows):
+   - True is a boolean.
+   - Null is a boolean.
+   - 1 is an integer.
+   - "1" is a string representing a number.
+   - 1.0 is a float but in JavaScript is actually a number.
