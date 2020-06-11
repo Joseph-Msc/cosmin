@@ -1,0 +1,8 @@
+Please create a ES6 file (*.js) and write the following logic.
+
+We have a variable which is true. If the variable is true, console log YES. 
+If not, console log NO.
+
+Change va value to null.
+
+Write a switch statement. Case null, console log NULL. Case true, console log TRUE. Default to console log NO.
