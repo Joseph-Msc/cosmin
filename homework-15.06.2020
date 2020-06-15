@@ -1,0 +1,10 @@
+1. Create an array and add to this array six random nuumbers.
+2. To the above mentioned array, add to the end of it (with javascript) and using the `push`method, tjhe 7th random number.
+3. On the same array, apply a filter using the `filter` method and remove all numbers less than 20 if there is any.
+4. Create an object. An empty JavaScript Object.
+5. To this object add a key/value paid representing your first name, last name, age and weight.
+6. Create a JavaScript function. This function should receive one argument (the object you've created above).
+7. Inside this function execute an if/else block and if your age is 12, console log "Joseph is 12 years old". Make shure the name and age are not hard coded and they use the object varriable passed as an argument to the function.
+8. Inside the `else` part of the if/else bloc console log (Joseph is not of age). The name should as before, grabbed from the object variable.
+9. Execute a switch statement. If the length of the array is 7, console log "OK". If is 6, console log "Missing the pushed value", as default, to nothing.
+10. Please, obfuscate your name using the JavaScript `btoa` method. Once this is done, create an if/else statement. If a random variable is true, decript your name with `atob` and console log the result. Else, do nothing.
