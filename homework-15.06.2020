@@ -8,3 +8,5 @@
 8. Inside the `else` part of the if/else bloc console log (Joseph is not of age). The name should as before, grabbed from the object variable.
 9. Execute a switch statement. If the length of the array is 7, console log "OK". If is 6, console log "Missing the pushed value", as default, to nothing.
 10. Please, obfuscate your name using the JavaScript `btoa` method. Once this is done, create an if/else statement. If a random variable is true, decript your name with `atob` and console log the result. Else, do nothing.
+11. Create a method/funciton `a` and a function/method `b`.
+12. Write inside function `a` the correct console log routine so that the console will output the following: a, c, d, e (c is console logged inside the b function.method. e is part of a setTimeout statement and is executed by the function `b` first. Inside function a, console log a is executed first. The function `b` is executed last inside function a.
