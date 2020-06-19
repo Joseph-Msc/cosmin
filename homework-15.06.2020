@@ -10,3 +10,6 @@
 10. Please, obfuscate your name using the JavaScript `btoa` method. Once this is done, create an if/else statement. If a random variable is true, decript your name with `atob` and console log the result. Else, do nothing.
 11. Create a method/funciton `a` and a function/method `b`.
 12. Write inside function `a` the correct console log routine so that the console will output the following: a, c, d, e (c is console logged inside the b function.method. e is part of a setTimeout statement and is executed by the function `b` first. Inside function a, console log a is executed first. The function `b` is executed last inside function a.
+
+
+[https://jsfiddle.net/user/avramcosmin/fiddles/](JsFiddle)
