@@ -8,20 +8,20 @@ console.log(numbersmorethan20);
 
 
 var Joseph = {
-    "firstname" : "Joseph",
-    "lastname" : "wong",
-    "age" : 12,
-    "weigth" : "40kg",
+    firstname : "Joseph",
+    lastname : "wong",
+    age : 12,
+    weigth : "40kg",
 };
-function age(){
- if (Joseph.age === 12){
+function age(age){
+ if (age === 12){
  console.log("Joseph is of age")
  } else{
  console.log("Joseph is not of age")
  }
 };
  
- age("Joseph");
+ age(12);
 
  switch (true){
     case numbers.length === 7 :
@@ -33,15 +33,15 @@ function age(){
     defult:
     null
 };
-let a = true;
+let x = true;
 
 console.log(btoa("Joseph wong"));
-  if (a === true){
+  if (x === true){
       console.log(atob("Sm9zZXBoIHdvbmc="));
   } else {
       null
   };
-  
+  a ();
  function a(){
 console.log("a")
    b()
