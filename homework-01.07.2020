@@ -1,0 +1,25 @@
+Create a nested structure as follows:
+const listOfFriends = [
+  {
+    firstName: string,
+    lastName: string,
+    hobbies: string[], // ['tennis', 'squash', 'football']
+    familyMembers: [
+      {
+        firstName: string,
+        lastName: string,
+        hobbies: string[], // ['tennis', 'squash', 'football']
+
+      },
+      {},
+      ...
+
+    ]
+  },
+  {},
+  ...
+];
+ 
+In total the list of friends should have at least 20 and each list of family members should have between 2 and maximum 5.
+Put this inside a *.js file.
+Make sure the list of firends array is correct and valid.
