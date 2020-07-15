@@ -5,14 +5,12 @@ listOfFriends.forEach(
   (friendObj) => {
     const template = generateCardTemplate();
 
-    const cardBodyEl = template.getElementsByClassName('card-body');
+    const cardBodyEl = template.getElementsByClassName('card-body')[0];
   
     const cardTitleTemplate = generateCardTitleTemplate([friendObj.firstName, friendObj.lastName].join('   '));
     cardBodyEl.appendChild(cardTitleTemplate);
-  }
-);
     if (friendObj.hobbies.length) {
-      const hobbiesTitleEl = document.createTextNode('h5');
+      const hobbiesTitleEl = document.createElement('h5');
       const hobbiesTitleTextNode = document.createTextNode('Hobbies');  
      hobbiesTitleEl.classList.add('h-title');
      hobbiesTitleEl.appendChild(hobbiesTitleTextNode);
@@ -28,7 +26,7 @@ listOfFriends.forEach(
 
   friendObj.familyMembers.forEach(
       (familyMemberObj) => {
-        const familyMembersTemplate = generateFamilyMembers(
+        const familyMembersTemplate = generateFamilyMembersTemplate(
             [
             familyMemberObj.firstName,
             familyMemberObj.lastName
@@ -45,6 +43,9 @@ listOfFriends.forEach(
         containerEl.append(template)
       }
     );
+  }
+);
+    
    
   
 
