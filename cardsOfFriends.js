@@ -9,7 +9,7 @@ listOfFriends.forEach(
   
     const cardTitleTemplate = generateCardTitleTemplate([friendObj.firstName, friendObj.lastName].join('   '));
     cardBodyEl.appendChild(cardTitleTemplate);
-	
+
     if (friendObj.hobbies.length) {
       const hobbiesTitleEl = document.createElement('h5');
       const hobbiesTitleTextNode = document.createTextNode('Hobbies');  
@@ -18,7 +18,7 @@ listOfFriends.forEach(
      cardBodyEl.appendChild(hobbiesTitleTextNode);
       const listOfHobbiesTemplate = generateHobbiesTemplate(friendObj.hobbies);
       cardBodyEl.appendChild(listOfHobbiesTemplate);
-    };
+    }
   
   const familyMembersTitleEl = document.createElement('h5');
   familyMembersTitleEl.classList.add('fmb-title');
@@ -46,9 +46,6 @@ listOfFriends.forEach(
     );
   }
 );
-   
-  
-
 
 function generateCardTemplate() {
   let template
