@@ -1,39 +1,52 @@
+getListOfFriends();
 
- getlistOfFriends();
-
-function getlistOfFriends () {
-    const xhttp = new XMLHttpRequest();
-    xhttp.open('GET', 'https://run.mocky.io/v3/a5191d40-26a4-49ea-b128-1a3eea08104b', 'true');
-   onload(xhttp);
-   console.log(xhttp)
+function getListOfFriends () {
+    const xhttp = makeRequest('https://run.mocky.io/v3/a5191d40-26a4-49ea-b128-1a3eea08104b');
+    xhttp.onload = onLoad();
+    xhttp.onloadend = onLoadEnd();
     xhttp.send();
 }
 
-function onload(xhttp){
-    xhttp.onload = () => {
-        const divEl = document.getElementById('divEl');
-        const divEl2 = document.createElement('div');
-        divEl.classList.add('lds-circle')
-        divEl.appendChild(divEl2);
-        console.log('loading....');
-        onloadend(xhttp);
-    }
+function onLoad() {
+    const loadingAnimationTemplate = renderLoadingAnimation();
+    const divContentContainerEl = document.getElementById('divContentContainer');
+    divContentContainerEl.appendChild(loadingAnimationTemplate);
 }
 
-function onloadend(xhttp){
-    xhttp.onloadend = () => {
-        console.log('finished loading');
-        divEl.classList.remove('lds-circle');
-        getmessage();
-    }
+function onLoadEnd() {
+    setTimeout(
+      () => {
+          const divContentContainerEl = document.getElementById('divContentContainer');
+          divContentContainerEl.replaceChild(renderLoadedMessageTemplate(), divContentContainerEl.firstChild);
+      },
+      5000
+    );
+}
+
+function renderLoadingAnimation() {
+    const divEl = document.createElement('div');
+    divEl.classList.add('lds-dual-ring');
+
+    return divEl;
 }
 
    
-function getmessage(){
+function renderLoadedMessageTemplate(){
     const h5El = document.createElement('h5');
     const textNode = document.createTextNode('Finished loading')
     h5El.appendChild(textNode);
-    divEl.appendChild(h5El);
+
+    return h5El;
+}
+
+function makeRequest(url, method = 'GET', xhttp = null) {
+    if (!xhttp) {
+        xhttp = new XMLHttpRequest();
+    }
+
+    xhttp.open(method, url, true);
+
+    return xhttp;
 }
 
 
