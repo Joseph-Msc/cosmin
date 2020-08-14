@@ -51,6 +51,7 @@ const listOfFriends = [
             {
                 firstName: "Jasper",
                 lastName: "Lau",
+
                 hobbies: ["football", "swimming", "gaming"], 
             },
             {
@@ -223,6 +224,7 @@ const listOfFriends = [
             },
             {
                 firstName: "Daniel",
+
                 lastName: "Goith",
                 hobbies: ["skydiving", "gaming", "cooking"], 
             },
@@ -314,6 +316,7 @@ const listOfFriends = [
             {
                 firstName: "Bridget",
                 lastName: "James",
+                
                 hobbies: ["catering", "Refinishing Furnitureg", "drawing"], 
             },
             {
