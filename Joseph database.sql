@@ -48,6 +48,66 @@ INSERT INTO `family_friends` (`id`, `first_name`, `last_name`) VALUES
 	(20, 'Elyse', 'Rong');
 /*!40000 ALTER TABLE `family_friends` ENABLE KEYS */;
 
+-- Dumping structure for table joseph.family_friends_family_members
+CREATE TABLE IF NOT EXISTS `family_friends_family_members` (
+  `family_member_id` int(11) NOT NULL,
+  `family_friend_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
+
+-- Dumping data for table joseph.family_friends_family_members: ~49 rows (approximately)
+/*!40000 ALTER TABLE `family_friends_family_members` DISABLE KEYS */;
+INSERT INTO `family_friends_family_members` (`family_member_id`, `family_friend_id`) VALUES
+	(1, 1),
+	(2, 1),
+	(3, 1),
+	(5, 2),
+	(6, 3),
+	(7, 3),
+	(8, 3),
+	(9, 4),
+	(10, 4),
+	(11, 5),
+	(12, 5),
+	(13, 6),
+	(14, 6),
+	(15, 6),
+	(16, 7),
+	(17, 7),
+	(18, 8),
+	(19, 8),
+	(20, 9),
+	(21, 9),
+	(22, 9),
+	(23, 10),
+	(24, 10),
+	(25, 11),
+	(26, 11),
+	(27, 11),
+	(28, 12),
+	(29, 12),
+	(30, 13),
+	(31, 13),
+	(32, 13),
+	(33, 14),
+	(34, 14),
+	(35, 14),
+	(36, 15),
+	(37, 15),
+	(38, 16),
+	(39, 16),
+	(40, 17),
+	(41, 17),
+	(42, 17),
+	(43, 18),
+	(44, 18),
+	(45, 19),
+	(46, 19),
+	(47, 19),
+	(48, 20),
+	(49, 20),
+	(4, 2);
+/*!40000 ALTER TABLE `family_friends_family_members` ENABLE KEYS */;
+
 -- Dumping structure for table joseph.family_friends_hobbies
 CREATE TABLE IF NOT EXISTS `family_friends_hobbies` (
   `id_ff` int(11) NOT NULL,
@@ -107,76 +167,6 @@ INSERT INTO `family_friends_hobbies` (`id_ff`, `id_h`) VALUES
 	(20, 19),
 	(20, 1);
 /*!40000 ALTER TABLE `family_friends_hobbies` ENABLE KEYS */;
-
--- Dumping structure for table joseph.family_friend_member
-CREATE TABLE IF NOT EXISTS `family_friend_member` (
-  `friend_id` int(11) NOT NULL,
-  `family_friend_id` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;
-
--- Dumping data for table joseph.family_friend_member: ~49 rows (approximately)
-/*!40000 ALTER TABLE `family_friend_member` DISABLE KEYS */;
-INSERT INTO `family_friend_member` (`friend_id`, `family_friend_id`) VALUES
-	(1, 1),
-	(2, 1),
-	(3, 1),
-	(5, 2),
-	(6, 3),
-	(7, 3),
-	(8, 3),
-	(9, 4),
-	(10, 4),
-	(11, 5),
-	(12, 5),
-	(13, 6),
-	(14, 6),
-	(15, 6),
-	(16, 7),
-	(17, 7),
-	(18, 8),
-	(19, 8),
-	(20, 9),
-	(21, 9),
-	(22, 9),
-	(23, 10),
-	(24, 10),
-	(25, 11),
-	(26, 11),
-	(27, 11),
-	(28, 12),
-	(29, 12),
-	(30, 13),
-	(31, 13),
-	(32, 13),
-	(33, 14),
-	(34, 14),
-	(35, 14),
-	(36, 15),
-	(37, 15),
-	(38, 16),
-	(39, 16),
-	(40, 17),
-	(41, 17),
-	(42, 17),
-	(43, 18),
-	(44, 18),
-	(45, 19),
-	(46, 19),
-	(47, 19),
-	(48, 20),
-	(49, 20),
-	(4, 2);
-/*!40000 ALTER TABLE `family_friend_member` ENABLE KEYS */;
-
--- Dumping structure for table joseph.family_friend_members_link
-CREATE TABLE IF NOT EXISTS `family_friend_members_link` (
-  `family_member_id` int(11) DEFAULT NULL,
-  `family_friend_id` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- Dumping data for table joseph.family_friend_members_link: ~0 rows (approximately)
-/*!40000 ALTER TABLE `family_friend_members_link` DISABLE KEYS */;
-/*!40000 ALTER TABLE `family_friend_members_link` ENABLE KEYS */;
 
 -- Dumping structure for table joseph.family_members
 CREATE TABLE IF NOT EXISTS `family_members` (
